@@ -1,8 +1,12 @@
 **📖 AI Story Researcher: RAG with Hallucination Auditing**
+
+
 A production-ready Retrieval-Augmented Generation (RAG) system designed to analyze complex narratives. This project features a unique dual-LLM architecture: one for story research and a second "Auditor" LLM to programmatically detect hallucinations and logical inconsistencies.
 This is designed to be run on local systems with Ollama. The accuracy can hugely improve with better models, this one uses low size model to save space. 
 
 **🌟 Key Features**
+
+
 History-Aware Retrieval: Implements a standalone-query rewriter using langchain-classic to resolve pronouns and context across multi-turn conversations.
 Temporal Logic Protection: Uses Chain-of-Thought (CoT) prompting to ensure the model respects chronological order (preventing common errors like setting a post-war story in the 1930s).
 Automated Hallucination Audit: A dedicated hallucination_check.py script that uses LLM-as-a-Judge with a Chain-of-Verification (CoVe) rubric.
@@ -11,6 +15,8 @@ Stateless Backend: Powered by FastAPI, allowing for scalable deployment while ma
 
 
 **🛠️ Tech Stack**
+
+
 LLM: Llama 3.2 (via Ollama)
 Orchestration: LangChain (Classic)
 Vector Database: ChromaDB
@@ -19,6 +25,8 @@ API: FastAPI & Uvicorn
 UI: Streamlit
 
 **🚀 Quick Start**
+
+
 _1. Prerequisites_
 Install Ollama and pull the model:
 Bash: ollama pull llama3.2:1b
