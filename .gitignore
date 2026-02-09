@@ -1,0 +1,23 @@
+# Python Environment (Very important to skip)
+ai_master/
+venv/
+.env
+__pycache__/
+*.pyc
+
+# Local Database & Story Files
+# We skip these so you don't leak private story data
+chroma_db/
+story.pdf
+story.txt
+
+# Research Logs
+# These contain your specific queries and AI answers
+interaction_logs.json
+audit_results.json
+
+# IDE & OS Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
