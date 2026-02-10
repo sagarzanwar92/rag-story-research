@@ -71,12 +71,7 @@ qa_prompt = ChatPromptTemplate.from_messages([
     MessagesPlaceholder("chat_history"),
     ("human", "{input}"),
 ])
-# 4. QA Logic
-# qa_prompt = ChatPromptTemplate.from_messages([
-#     ("system", "Answer the question using the context: {context}"),
-#     MessagesPlaceholder("chat_history"),
-#     ("human", "{input}"),
-# ])
+
 
 doc_chain = create_stuff_documents_chain(llm, qa_prompt)
 rag_chain = create_retrieval_chain(history_aware_retriever, doc_chain)
