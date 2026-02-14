@@ -5,8 +5,6 @@ st.set_page_config(page_title="Story Researcher", page_icon="📖")
 st.title("📖 AI Story Researcher")
 st.markdown("Query the database with full chat context.")
 
-
-
 # Sidebar Status
 st.sidebar.header("Backend Status")
 try:
